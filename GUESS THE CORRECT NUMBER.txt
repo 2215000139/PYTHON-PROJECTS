@@ -1,0 +1,16 @@
+#GUESS THE CORRECT NUMBER
+import random
+i=0
+count=1
+while(i!=10000):
+    a=int(input('Enter your number!'))
+    n=random.randint(1,10)
+    print(n)
+    if(a==n):
+        print(f'''You Guessed the correct number in {count} times''')
+        break
+    else:
+        print(f'''Try Again you used {count} life''')
+        count+=1
+        continue
+    i+=1
